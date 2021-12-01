@@ -27,8 +27,11 @@ load-plugins = "pylint_flask_sqlalchemy"
 [tool.pylint.typecheck]
 ignored-classes = "scoped_session, relationship"
 
-[tool.isort]
-profile = "black"
-
 [tool.pylint.format]
 max-line-length = "88"
+
+[tool.pylint.messages_control]
+disable = "C0114, C0115, C0116, R0903"
+
+[tool.isort]
+profile = "black"
